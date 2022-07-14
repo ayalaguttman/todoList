@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  float: left;
+  width: 100%;
+  text-align: center;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.menu {
+  width: 25%;
+  height: 100%; 
+  position: fixed;
+  padding-top: 50px;
+  background-color: rgb(107, 106, 106);
+}
+
+.title {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+.todoTextField {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: fit-content;
+  background-color: white;
+  border-radius: 4%;
+  box-shadow: 0 1px 5px rgb(245, 8, 71), 0 1px 2px rgb(231 6 6 / 93%);
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+
+.leftTodosText {
+  align-items: center;
+  text-align: center;
+  color: rgb(84, 83, 83);
+  border-radius: 4px 4px 4px 4px;
+  width: 98%;
+  min-height: 70px;
+  font-size: 20px;
+  padding: 1%;
+  margin: 1%;
+}
+
+.numTodos {
+  color: rgb(235, 11, 75);
+}
+
+.menuButtons {
+  text-align: center;
+  align-self: center;
+  margin: 20px;
+  padding: 16px;
+  width: 60%;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg,
+      rgb(200, 2, 2) 0%,
+      rgb(235, 11, 112) 100%);
+  color: #fff;
+  text-transform: capitalize;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menuButtons:hover {
+  box-shadow: 0 0 12px rgba(79, 62, 75, 0.7) inset;
+  color: rgba(255, 255, 255, 1);
+}
+
+.todosSection {
+  height: 100%;
+  width: 75%;
+  max-width: 75%;
+  margin-left:25%;
+}
+
+.todoList {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2%;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: rgb(235, 11, 75) !important;
+}
